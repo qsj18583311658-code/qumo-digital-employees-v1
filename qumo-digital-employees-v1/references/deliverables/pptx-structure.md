@@ -31,8 +31,23 @@ Weak:
 - Trend: daily spend, GMV, ROI, CVR.
 - Table: action plan and owner suggestions.
 
+## Visual Production Modes
+- `Editable-first`: Use native PowerPoint text, shapes, charts, and simple SVG/image assets. Choose this for client decks, recurring reports, and slides that the team must revise.
+- `Image-heavy`: Generate each slide or key visual as a full-page image, then package into PPT/PDF. Choose this for mood boards, high-impact covers, campaign visual concepts, or quick preview decks where editability is less important.
+- `Hybrid`: Keep titles, labels, charts, and notes editable; use generated images only for hero visuals, backgrounds, product scenes, or illustration blocks.
+- `Image-to-editable`: If a slide already exists only as screenshot/PDF/full-page image, reconstruct text boxes, shapes, and visual layers into an editable PPTX when the user needs future editing.
+
+## Production QA
+- Render or preview slides before delivery when possible.
+- Check text clipping, font substitution, unreadable labels, chart legibility, and inconsistent margins.
+- Keep source artifacts when possible: outline, page list, image prompts, generated images, and authoring script.
+- Do not rasterize important text into images unless the user explicitly accepts lower editability.
+
 ## Speaker Notes
 Add short speaking prompts when the user asks for a presentation. Focus on what the intended reader should understand and decide.
 
 ## PDF Export
 Offer `.pdf` when the deck needs to be forwarded or locked as final.
+
+## Related Visual Skill Patterns
+See `references/integrations/github-visual-skills.md` when the user asks for advanced PPT generation, image-heavy slides, editable reconstruction, or GitHub skill integration.

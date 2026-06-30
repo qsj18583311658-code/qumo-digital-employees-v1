@@ -19,6 +19,7 @@ Use this file only as a navigation index. Load the detailed role cards from `ref
 - PPT生成: 项目总监, 策略总监, PPT/报告设计师, 数据分析师, 创意总监, 客户经理.
 - 文案修改: 项目总监, 创意总监, 内容策划, 投放/电商运营, 客户经理, 策略总监.
 - 短视频脚本/拍摄: 项目总监, 短视频编导, 内容策划, 创意总监, 投放/电商运营, 客户经理.
+- 图文生成: 项目总监, 内容策划, 创意总监, PPT/报告设计师, 客户经理, 策略总监.
 
 ## Identity Rules
 - Do not give roles personal names.
