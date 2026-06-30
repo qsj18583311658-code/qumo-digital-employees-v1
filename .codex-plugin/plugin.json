@@ -1,0 +1,40 @@
+{
+  "name": "qumo-digital-employees",
+  "version": "0.1.0",
+  "description": "面向美妆时尚内容电商团队的多岗位数字员工插件。",
+  "author": {
+    "name": "趣摩文化",
+    "url": "https://github.com/qsj18583311658-code"
+  },
+  "homepage": "https://github.com/qsj18583311658-code/qumo-digital-employees-v1",
+  "repository": "https://github.com/qsj18583311658-code/qumo-digital-employees-v1",
+  "license": "MIT",
+  "keywords": [
+    "qumo",
+    "digital-employees",
+    "marketing",
+    "beauty",
+    "fashion",
+    "pptx",
+    "xiaohongshu"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "趣摩数字员工",
+    "shortDescription": "美妆时尚内容电商团队的多岗位数字员工。",
+    "longDescription": "趣摩数字员工把策略、数据、内容、创意、投放、客户和报告设计等固定岗位组织成一套 Codex 协作工作流，用于复盘报告、数据分析、PPT 汇报、小红书图文卡片和文案优化等业务交付。",
+    "developerName": "趣摩文化",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/qsj18583311658-code/qumo-digital-employees-v1",
+    "defaultPrompt": [
+      "用趣摩数字员工做一个618美妆复盘",
+      "生成一套小红书图文卡片",
+      "把这个复盘整理成PPT"
+    ],
+    "brandColor": "#C55A6A"
+  }
+}
