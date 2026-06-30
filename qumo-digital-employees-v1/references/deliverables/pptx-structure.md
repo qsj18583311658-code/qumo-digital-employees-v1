@@ -43,6 +43,17 @@ Weak:
 - Keep source artifacts when possible: outline, page list, image prompts, generated images, and authoring script.
 - Do not rasterize important text into images unless the user explicitly accepts lower editability.
 
+## Bundled Generator
+Use `scripts/build_pptx_deck.py` when a simple editable PPTX is enough or when the user needs a local no-GitHub workflow.
+
+Example:
+
+```bash
+python3 scripts/build_pptx_deck.py examples/pptx-deck-example.json --out output/qumo-deck.pptx
+```
+
+Input should be a JSON deck spec with `theme`, `title`, and `slides`. Supported slide types: `cover`, `summary`, `metrics`, `two-column`, `actions`.
+
 ## Speaker Notes
 Add short speaking prompts when the user asks for a presentation. Focus on what the intended reader should understand and decide.
 

@@ -1,0 +1,41 @@
+{
+  "theme": "qumo-clean",
+  "title": "618 美妆内容电商复盘",
+  "subtitle": "示例结构，用于验证内置 PPTX 生成器",
+  "slides": [
+    {
+      "type": "cover",
+      "title": "618 美妆内容电商复盘",
+      "subtitle": "内容表现、投放效率与下一阶段动作"
+    },
+    {
+      "type": "summary",
+      "title": "曝光已放大，但成交承接仍需补强",
+      "bullets": [
+        "短视频内容带来更多点击，但下游转化数据仍需补齐",
+        "高互动素材更偏种草，成交型素材需要单独复盘",
+        "下一阶段应先稳定商品页和直播间承接，再判断放量"
+      ],
+      "speaker_note": "先讲结论，再进入数据证据。"
+    },
+    {
+      "type": "metrics",
+      "title": "关键指标仍需统一口径",
+      "metrics": [
+        {"label": "曝光", "value": "待补数据", "note": "平台导出"},
+        {"label": "CTR", "value": "待补数据", "note": "点击/曝光"},
+        {"label": "GMV", "value": "待补数据", "note": "店铺或平台口径"},
+        {"label": "ROI", "value": "待补数据", "note": "GMV/消耗"}
+      ]
+    },
+    {
+      "type": "actions",
+      "title": "下一步行动清单",
+      "actions": [
+        {"item": "补齐素材级点击、成交和退款数据", "owner": "数据分析师", "deadline": "T+1", "metric": "数据完整度"},
+        {"item": "拆分种草型与成交型素材复盘", "owner": "内容策划", "deadline": "T+2", "metric": "可复刻素材数"},
+        {"item": "统一商品页和直播间卖点口径", "owner": "投放/电商运营", "deadline": "T+3", "metric": "CVR"}
+      ]
+    }
+  ]
+}

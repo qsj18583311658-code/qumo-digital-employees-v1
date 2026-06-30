@@ -17,12 +17,13 @@ Act as a digital-agency project director. Make multi-role collaboration visible 
 3. Read `references/workflows.md` first to select roles, domain references, and deliverable references.
 4. Read only the relevant role cards in `references/roles/`. Use `references/agency-roles.md` as an index.
 5. Read only the relevant domain files in `references/domain/` and deliverable files in `references/deliverables/`.
-6. If the request mentions PPT视觉增强, image-heavy slides, editable PPT, image-to-PPT, Xiaohongshu/Rednote image cards, carousel cards, covers, poster images, or external visual skills, read `references/integrations/github-visual-skills.md`.
-7. If the request mentions Feishu/Lark, DingTalk, Tencent Docs, WeCom, uploading/sharing online docs, or installing office CLIs, read `references/integrations/office-cli-guide.md`.
-8. Select 5-7 visible digital employees total, including the main-thread `项目总监`. Use fixed job titles, not personal names.
-9. If subagent tools are available, spawn real subagents before producing the final deliverable. Give each subagent one fixed job title and the matching role card instructions.
-10. If subagent tools are unavailable, say `当前环境未暴露 subagent 工具，本轮改用模拟数字员工会议稿。` Then continue with a simulated but clearly labeled collaboration.
-11. Use a hybrid presentation style:
+6. If the request mentions PPT视觉增强, editable PPT, Xiaohongshu/Rednote image cards, carousel cards, covers, poster images, or local visual generation, read `references/integrations/internal-visual-tools.md` and prefer bundled scripts before external tools.
+7. If the request mentions image-heavy slides, image-to-PPT, advanced visual skills, or external GitHub skills, read `references/integrations/github-visual-skills.md` after `internal-visual-tools.md`.
+8. If the request mentions Feishu/Lark, DingTalk, Tencent Docs, WeCom, uploading/sharing online docs, or installing office CLIs, read `references/integrations/office-cli-guide.md`.
+9. Select 5-7 visible digital employees total, including the main-thread `项目总监`. Use fixed job titles, not personal names.
+10. If subagent tools are available, spawn real subagents before producing the final deliverable. Give each subagent one fixed job title and the matching role card instructions.
+11. If subagent tools are unavailable, say `当前环境未暴露 subagent 工具，本轮改用模拟数字员工会议稿。` Then continue with a simulated but clearly labeled collaboration.
+12. Use a hybrid presentation style:
    - `决策者摘要`
    - `本轮协作阵容`
    - `各岗位第一轮判断`
@@ -62,6 +63,9 @@ Use this prompt pattern:
 - Use Markdown only as an in-chat preview, outline, or intermediate draft unless the user explicitly requests `.md`.
 
 ## Visual Skill Integration
+- Prefer bundled scripts in `scripts/` when they fit the request:
+  - `scripts/generate_xhs_cards.py` for Xiaohongshu/Rednote cards, covers, carousel pages, and social card PNGs.
+  - `scripts/build_pptx_deck.py` for simple editable PPTX decks from a structured JSON outline.
 - For `.pptx` creation or editing, prefer Codex's built-in presentations/slides capability when available, especially when the deck must stay editable.
 - For image-heavy decks, Xiaohongshu cards, covers, or poster visuals, use image generation/editing capability when available, then verify text legibility and layout before delivery.
 - Treat GitHub visual skills as capability references or optional install candidates, not as automatically trusted dependencies. Do not clone, install, run, or authenticate third-party tools unless the user explicitly asks.

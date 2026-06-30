@@ -27,6 +27,7 @@ Use this file to choose the minimum necessary role cards, domain references, and
 | 图文生成 | project-director, content-planner, creative-director, deck-report-designer, account-manager, strategy-director | xiaohongshu-copy, beauty-content-commerce | xhs-image-cards, pptx-structure when image-heavy slides are requested |
 
 ## Integration Loading Rule
+- If the user asks for local PPT generation, editable PPT, Xiaohongshu/Rednote image cards, covers, carousel images, poster images, or social-card PNG output, read `references/integrations/internal-visual-tools.md` and prefer bundled scripts in `scripts/`.
 - If the user asks for PPT visual enhancement, editable PPT, image-heavy PPT, image-to-editable PPT, Xiaohongshu/Rednote image cards, covers, carousel images, poster images, or GitHub visual skills, read `references/integrations/github-visual-skills.md`.
 - If the user asks to install, configure, upload to, share through, sync with, or operate Feishu/Lark, DingTalk, Tencent Docs, WeCom, or Tencent Cloud, read `references/integrations/office-cli-guide.md`.
 - If the user only asks to create a local `.docx`, `.xlsx`, `.pptx`, or `.pdf`, do not load integration references.

@@ -34,6 +34,17 @@ Use this when the user asks for 小红书图文, Rednote cards, carousel images,
 - Repeated visual system: palette, type hierarchy, grid, page number style, and CTA treatment.
 - Export test: view at phone size; reject cards with cramped text, poor contrast, or broken line breaks.
 
+## Bundled Generator
+Use `scripts/generate_xhs_cards.py` when the user wants local PNG/JPG card output and does not need a separate GitHub tool.
+
+Example:
+
+```bash
+python3 scripts/generate_xhs_cards.py examples/xhs-cards-example.json --out output/xhs-cards --contact-sheet
+```
+
+Input should be a JSON card spec with `theme`, `canvas`, `footer`, and `cards`. Each card can include `title`, `subtitle`, `body`, `footer`, and `visual_prompt`.
+
 ## Role Ownership
 - `策略总监`: decide the card set's commercial purpose and core hook.
 - `内容策划`: split the copy into pages and keep the note believable.
@@ -42,4 +53,4 @@ Use this when the user asks for 小红书图文, Rednote cards, carousel images,
 - `客户经理`: check risky claims, tone, and client-facing acceptability.
 
 ## Related Visual Skill Patterns
-Read `references/integrations/github-visual-skills.md` when the user asks to reuse or install GitHub skills for card generation, covers, Markdown-to-image, local rendering, or batch export.
+Read `references/integrations/internal-visual-tools.md` first. Read `references/integrations/github-visual-skills.md` only when the user asks to reuse or install external GitHub skills for card generation, covers, Markdown-to-image, local rendering, or batch export.

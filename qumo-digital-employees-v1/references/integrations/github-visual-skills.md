@@ -3,6 +3,7 @@
 Use this file when a task asks for PPT visual generation, editable PPT, image-heavy decks, image-to-PPT reconstruction, Xiaohongshu/Rednote image cards, covers, posters, carousel cards, or GitHub skill integration.
 
 ## Integration Policy
+- Prefer the internalized bundled scripts first: `scripts/build_pptx_deck.py` and `scripts/generate_xhs_cards.py`.
 - Do not vendor third-party code into this skill by default. GitHub projects change quickly and may bring dependency, license, account, or security issues.
 - Use external projects as patterns first: workflow shape, deliverable structure, QA checks, visual modes, and install candidates.
 - Clone, install, run, authenticate, or publish through external tools only after the user explicitly asks.
